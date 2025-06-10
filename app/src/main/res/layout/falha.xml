@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- Top wave -->
+    <ImageView
+        android:id="@+id/bg_wave_top"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_wave_top"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Texto "ALFABETIZAÇÃO" -->
+    <TextView
+        android:id="@+id/text_greeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="ALFABETIZAÇÃO"
+        android:textColor="@color/orange_dark"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/bg_wave_top"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Bloco com ícone "!" e texto "Quase lá!" -->
+    <LinearLayout
+        android:id="@+id/alert_block"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@id/text_greeting"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/icon_alert"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/rounded_orange"
+            android:gravity="center"
+            android:text="!"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_quase_la"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Quase lá!"
+            android:textColor="@color/orange_dark"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+    <!-- Texto explicativo -->
+    <TextView
+        android:id="@+id/text_instruction"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Não tem problema,\nvamos tentar mais uma vez?"
+        android:textAlignment="center"
+        android:textColor="@color/orange_dark"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/alert_block"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Botão Ver vídeo novamente -->
+    <Button
+        android:id="@+id/button_watch_again"
+        android:layout_width="235dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/orange_dark"
+        android:drawableLeft="@drawable/ic_play_arrow"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/white"
+        android:text="Ver vídeo novamente"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_instruction" />
+
+    <!-- Texto "ou" -->
+    <TextView
+        android:id="@+id/text_ou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ou"
+        android:textColor="@color/orange_dark"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/button_watch_again"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Botão Tentar novamente -->
+    <Button
+        android:id="@+id/button_try_again"
+        android:layout_width="228dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/orange_dark"
+        android:drawableLeft="@drawable/outline_photo_camera_24"
+        android:drawablePadding="8dp"
+        android:text="Tentar novamente"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_ou" />
+
+    <!-- Bottom wave -->
+    <ImageView
+        android:id="@+id/bg_wave_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_wave_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Footer menu (opcional, igual à outra tela) -->
+    <LinearLayout
+        android:id="@+id/footer_menu"
+        android:layout_width="450dp"
+        android:layout_height="51dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:id="@+id/button_exit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/outline_arrow_circle_left_24"
+                android:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sair"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

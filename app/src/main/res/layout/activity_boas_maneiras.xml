@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- Faixa Superior -->
+    <ImageView
+        android:id="@+id/bg_wave_top"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_wave_top"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Título -->
+
+    <!-- Lista de Botões -->
+
+    <!-- Faixa Inferior -->
+
+    <TextView
+        android:id="@+id/text_greeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="casual"
+        android:text="BOAS MANEIRAS"
+        android:textColor="@color/orange_dark"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bg_wave_top" />
+
+    <ImageView
+        android:id="@+id/imgCoelho"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:contentDescription="Imagem de um coelho"
+        android:src="@drawable/alfa"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="37dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_buttons"
+        android:layout_width="359dp"
+        android:layout_height="478dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/bg_wave_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_greeting"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Button
+            android:id="@+id/btnVideo1"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/btn_rounded_orange"
+            android:text="Vídeo 1: Bom dia!"
+            android:textSize="18sp"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnVideo2"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/btn_rounded_orange"
+            android:text="Vídeo 2: Boa tarde!"
+            android:textSize="18sp"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnVideo3"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/btn_rounded_orange"
+            android:text="Vídeo 3: Boa noite!"
+            android:textSize="18sp"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnVideo4"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/btn_rounded_orange"
+            android:text="Vídeo 4: Por favor!"
+            android:textSize="18sp"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnVideo5"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/btn_rounded_orange"
+            android:text="Vídeo 5: Obrigado!"
+            android:textSize="18sp"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnVideo6"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/btn_rounded_orange"
+            android:text="Vídeo 5: Desculpe!"
+            android:textSize="18sp"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/bg_wave_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_wave_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Rodapé -->
+    <LinearLayout
+        android:id="@+id/footer_menu"
+        android:layout_width="450dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/button_exit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/outline_arrow_circle_left_24"
+                android:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sair"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/button_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"/>
+
+        <LinearLayout
+            android:id="@+id/button_progress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

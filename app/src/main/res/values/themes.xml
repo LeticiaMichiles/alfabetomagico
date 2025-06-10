@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.LivroInterativo" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#FFA726</item>
+        <item name="colorPrimaryDark">#FB8C00</item>
+        <item name="colorAccent">#FFB74D</item>
+
+    </style>
+</resources>

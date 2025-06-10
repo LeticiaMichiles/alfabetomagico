@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">livroInterativo</string>
+    <string name="cadastrar">🚀Cadastrar </string>
+    <string name="recover_link_button">Enviar Link de recuperação</string>
+    <string name="sair">Sair</string>
+</resources>

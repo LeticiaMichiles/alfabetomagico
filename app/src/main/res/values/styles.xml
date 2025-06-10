@@ -1,0 +1,9 @@
+<resources>
+
+    <style name="Theme.livroInterativo" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Só adicione o que vai usar -->
+
+        <item name="colorPrimary">@color/orange</item>
+    </style>
+
+</resources>
