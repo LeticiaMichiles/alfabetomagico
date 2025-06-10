@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:fontFamily="casual"
-        android:text="BOAS MANEIRAS TESTE"
+        android:text="BOAS MANEIRAS"
         android:textColor="@color/orange_dark"
         android:textSize="28sp"
         android:textStyle="bold"
